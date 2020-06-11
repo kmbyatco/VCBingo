@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <title>VC Bingo Host</title>
+</head>
+<body>
+<canvas id="bingoCanvas" >
+    Your browser does not support the HTML5 canvas tag.
+</canvas>
+<h2 id="lastNum">
+    
+</h2>
+<p>
+    <label for="countdownId">Countdown: </label><input type="number" id="countdownId" value="50" min="0" max="200" maxlength="3" size="3"><button type="button" id="timerButton" onclick="startCountdown()">Start Bingo</button>
+</p>
+<p>
+    Title Color:  <label for="titleColor"></label><input id="titleColor" maxlength="7" size="7" type="color"
+                                                         value="#FFFFFF">
+    Select Color:  <label for="selectColor"></label><input id="selectColor" maxlength="7" size="7" type="color"
+                                                           value="#FFC800"></p><p>
+    Row Color #1:  <label for="row1Color"></label><input id="row1Color" maxlength="7" size="7" type="color"
+                                                         value="#b8d8d8">
+    Row Color #2:  <label for="row2Color"></label><input id="row2Color" maxlength="7" size="7" type="color"
+                                                         value="#7a9e9f">
+    Row Color #3:  <label for="row3Color"></label><input id="row3Color" maxlength="7" size="7" type="color"
+                                                         value="#a7615e">
+    Row Color #4:  <label for="row4Color"></label><input id="row4Color" maxlength="7" size="7" type="color"
+                                                         value="#fe928b">
+    Row Color #5:  <label for="row5Color"></label><input id="row5Color" maxlength="7" size="7" type="color"
+                                                         value="#fe5f55"></p><p>
+    Max Number: <label for="maxNumber"></label><input type="number" id="maxNumber" value="75" min="25" maxlength="3" size="2"></p>
+<script src="scripts/vcbingohost.js"></script>
+
+</body>
+</html>
