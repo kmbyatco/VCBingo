@@ -14,12 +14,15 @@
     
 </h2>
 <p>
-    <button type="button" id="timerButton" onclick="startCountdown()">Start Bingo</button></p><p>
-    <label for="countdownId">Reveal Timer: </label><input type="number" id="countdownId" value="50" min="0" max="200" maxlength="3" size="3">
+    <button type="button" id="timerButton" onclick="startCountdown()">Start Bingo</button><p id="speed">5 Seconds (adjust below)</p><p>
+<div class="slideContainer">
+    <input type="range" min="0" max="200" value="50" class="slider" id="countdownId">
+</div>
+<!--<label for="countdownId">Reveal Timer: </label><input type="number" id="countdownId" value="50" min="0" max="200" maxlength="3" size="3">
 </p>
-<!--<p>
-    Title Color:  <label for="titleColor"></label><input id="titleColor" maxlength="7" size="7" type="color"
-                                                         value="#FFFFFF">-->
+<p>
+Title Color:  <label for="titleColor"></label><input id="titleColor" maxlength="7" size="7" type="color"
+                                                     value="#FFFFFF">-->
 <p>    
 Select Color:  <label for="selectColor"></label><input id="selectColor" maxlength="7" size="7" type="color"
                                                            value="#FBF593">

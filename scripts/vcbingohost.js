@@ -18,6 +18,8 @@ let bingoO = [];
 let gameCode =Math.round(Math.random() * randomIzer.length);
 let cardB = [];
 
+let sliderValue = document.getElementById("countdownId");
+
 //document.getElementById("titleColor").value,document.getElementById("selectColor").value
 let titleColor = "#FFFFFF";
 
@@ -44,13 +46,16 @@ function onKeyPress(e){
 
 //I want to include a countdown timer for players/teams that take too long
 let countdownTime;
-
 let correctNumbers =[];
+
+sliderValue.oninput = function() {
+document.getElementById("speed").innerHTML = "~"+Math.floor((document.getElementById("countdownId").value/10))+" Seconds";
+}
+let tempArray = [];
 
 function startCountdown(){
     if (colorTracker.length<revealCount) return;
     if (countdownStarted) {
-        console.log("Hi");
         document.getElementById("timerButton").innerHTML = "Start Bingo";
         countdownStarted = false;
         bigNumberBool = false;
@@ -62,58 +67,58 @@ function startCountdown(){
     countdownStarted = true;
     countdownTime = numberTotal;
    
-    let tempArray = [];
+    tempArray = [];
     for (let i = 0; i < numberArray.length; i++){
         if (colorTracker[numberArray[i]]!==0) {
             tempArray.push(numberArray[i]);
             console.log(numberArray[i]);
         }
     }
-    
+
+    revealCards();
+
     // Update the count down every 1 second
     xInterval = setInterval(function() {
-
-        countdownTime-=1;
-
-        // Display the result in the element with id="countdownId"
-        //document.getElementById("countdownId").value = countdownTime;
-
-            let temp = tempArray[revealCount];
-            switch(true) {
-                case temp > (numberTotal / gridWidth) * 4 + 4:
-                    console.log("test");
-                    temp -= 4;
-                    break;
-                case temp > (numberTotal / gridWidth) * 3 + 3:
-                    temp -= 3;
-                    break;
-                case temp > (numberTotal / gridWidth) * 2 + 2:
-                    temp -= 2;
-                    break;
-                case temp > (numberTotal / gridWidth) + 1:
-                    temp -= 1;
-                    break;
-            }
-            
-            if(temp!==undefined) {
-                correctNumbers.push(temp);
-                document.getElementById("lastNum").innerHTML += temp + ", ";
-                bigNumber = temp;
-                bigNumberBool = true;
-                colorTracker[tempArray[revealCount]] = 1;
-            }
-        revealCount++;
-        refreshCards();
+        
+        revealCards();
         
         // If the count down is finished, write some text
         if (countdownTime < 0) {
             clearInterval(xInterval);
-            //startCountdown();
         }
     }, (document.getElementById("countdownId").value)*100);
 }
 
+function revealCards() {
+    countdownTime-=1;
 
+    let temp = tempArray[revealCount];
+    switch(true) {
+        case temp > (numberTotal / gridWidth) * 4 + 4:
+            console.log("test");
+            temp -= 4;
+            break;
+        case temp > (numberTotal / gridWidth) * 3 + 3:
+            temp -= 3;
+            break;
+        case temp > (numberTotal / gridWidth) * 2 + 2:
+            temp -= 2;
+            break;
+        case temp > (numberTotal / gridWidth) + 1:
+            temp -= 1;
+            break;
+    }
+
+    if(temp!==undefined) {
+        correctNumbers.push(temp);
+        document.getElementById("lastNum").innerHTML += temp + ", ";
+        bigNumber = temp;
+        bigNumberBool = true;
+        colorTracker[tempArray[revealCount]] = 1;
+    }
+    revealCount++;
+    refreshCards();
+}
 
 
 function inputDetected(e){
