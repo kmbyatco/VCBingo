@@ -14,25 +14,52 @@
     
 </h2>
 <p>
-    <label for="countdownId">Countdown: </label><input type="number" id="countdownId" value="50" min="0" max="200" maxlength="3" size="3"><button type="button" id="timerButton" onclick="startCountdown()">Start Bingo</button>
+    <button type="button" id="timerButton" onclick="startCountdown()">Start Bingo</button></p><p>
+    <label for="countdownId">Reveal Timer: </label><input type="number" id="countdownId" value="50" min="0" max="200" maxlength="3" size="3">
 </p>
-<p>
+<!--<p>
     Title Color:  <label for="titleColor"></label><input id="titleColor" maxlength="7" size="7" type="color"
-                                                         value="#FFFFFF">
-    Select Color:  <label for="selectColor"></label><input id="selectColor" maxlength="7" size="7" type="color"
-                                                           value="#FFC800"></p><p>
+                                                         value="#FFFFFF">-->
+<p>    
+Select Color:  <label for="selectColor"></label><input id="selectColor" maxlength="7" size="7" type="color"
+                                                           value="#FBF593">
     Row Color #1:  <label for="row1Color"></label><input id="row1Color" maxlength="7" size="7" type="color"
-                                                         value="#b8d8d8">
+                                                         value="#7A6DAA">
     Row Color #2:  <label for="row2Color"></label><input id="row2Color" maxlength="7" size="7" type="color"
-                                                         value="#7a9e9f">
+                                                         value="#6588C0"></p><p>
     Row Color #3:  <label for="row3Color"></label><input id="row3Color" maxlength="7" size="7" type="color"
-                                                         value="#a7615e">
+                                                         value="#7BBE98">
     Row Color #4:  <label for="row4Color"></label><input id="row4Color" maxlength="7" size="7" type="color"
-                                                         value="#fe928b">
+                                                         value="#EAAA7B">
     Row Color #5:  <label for="row5Color"></label><input id="row5Color" maxlength="7" size="7" type="color"
-                                                         value="#fe5f55"></p><p>
-    Max Number: <label for="maxNumber"></label><input type="number" id="maxNumber" value="75" min="25" maxlength="3" size="2"></p>
-<script src="scripts/vcbingohost.js"></script>
+                                                         value="#E58072"></p><p>
+    <button type="button" id="testCardButton" onclick="testCard()">Test Game Card: </button><label for="cardTest"></label><input type="number" id="cardTest" value="0" min="0" max="99999" maxlength="5" size="5"> <br />
+    
 
+<h2 id="testCard">
+
+</h2>
+    <!--    Max Number: <label for="maxNumber"></label><input type="number" id="maxNumber" value="75" min="25" maxlength="3" size="2"></p>-->
+<script src="scripts/vcbingohost.js"></script>
+<br />
+<br />
+<br />
+<h3>Video Conferencing BINGO - v.1<br />by Pete Vigeant (vigeant gmail / @greenghoulie)</h3>
+<h4>Notes</h4>
+<p>Latest update - <a href="https://github.com/The-Completely-Surrounded/VCBingo">We're on GitHub! Contribute today (or host your own).</a></p>
+<p>Howdy. I'm not a huge fan of BINGO, but I do realize that other folks enjoy it - especially kids! So here ya go. I grabbed the more common "BINGO Phrases" from various sources and made up some of my own. Please let me know if you would like additional features or find any bugs.</p><p>
+<h4>Game Setup</h4>
+<p>
+    Share the main board on the big screen or as a shared desktop/window. The player with access to the mouse is the Host. That player's job is to call out the numbers as they come up. 
+</p><p>Each other player (and you can have as many players as you want - there are literally thousands and thousands of cards) loads a card (or multiple cards) by visiting <a href="https://thecompletelysurrounded.com/games/bingo">the VC BINGO card site</a>.
+</p><p> Once the game is over, simply reload the page and use a different Game ID.</p>
+<h4>How to Play</h4>
+<p>
+    Every player has a game card. The Host has to hit the "Start Bingo" button and new numbers will automatically appear (you can adjust the speed by changing the number in the "Reveal Timer" box - lower numbers mean faster reveals).</p>
+<p>
+    When a player has a match on her or his card, they click/tap on that card to change the color and indicate the match. If a player gets a full row of five matches vertically, horizontally, or diagonally, they unmute and yell "BINGO!" and the host hits "Stop Bingo" to prevent further numbers from coming up.</p>
+<p>
+    The first player to yell "BINGO" is the winner - as long as they are honest! Luckily, the Host can simply ask the player for the card ID at the bottom of the screen and test it by hitting the "Test Game Card" button. If the card looks good, that player wins! If not, play continues.
+</p>
 </body>
 </html>
