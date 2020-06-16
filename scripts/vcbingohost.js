@@ -43,6 +43,9 @@ function onKeyPress(e){
     stopReveal=!stopReveal;
 }
 
+/*function playSound () {
+    document.getElementById('play').play();
+}*/
 
 //I want to include a countdown timer for players/teams that take too long
 let countdownTime;
@@ -91,7 +94,7 @@ function startCountdown(){
 
 function revealCards() {
     countdownTime-=1;
-
+//playSound();
     let temp = tempArray[revealCount];
     switch(true) {
         case temp > (numberTotal / gridWidth) * 4 + 4:
