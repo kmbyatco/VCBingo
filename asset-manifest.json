@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/VCBingo/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/VCBingo/static/js/main.834c9afc.chunk.js",
-    "main.js.map": "/VCBingo/static/js/main.834c9afc.chunk.js.map",
+    "main.js": "/VCBingo/static/js/main.0ca25652.chunk.js",
+    "main.js.map": "/VCBingo/static/js/main.0ca25652.chunk.js.map",
     "runtime-main.js": "/VCBingo/static/js/runtime-main.5e63d955.js",
     "runtime-main.js.map": "/VCBingo/static/js/runtime-main.5e63d955.js.map",
     "static/js/2.e3bac2d8.chunk.js": "/VCBingo/static/js/2.e3bac2d8.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.5e63d955.js",
     "static/js/2.e3bac2d8.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.834c9afc.chunk.js"
+    "static/js/main.0ca25652.chunk.js"
   ]
 }
