@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/VCBingo/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/VCBingo/static/js/main.ed5fc2f7.chunk.js",
-    "main.js.map": "/VCBingo/static/js/main.ed5fc2f7.chunk.js.map",
+    "main.js": "/VCBingo/static/js/main.dd834b28.chunk.js",
+    "main.js.map": "/VCBingo/static/js/main.dd834b28.chunk.js.map",
     "runtime-main.js": "/VCBingo/static/js/runtime-main.32965a95.js",
     "runtime-main.js.map": "/VCBingo/static/js/runtime-main.32965a95.js.map",
-    "static/js/2.e4c6e3f3.chunk.js": "/VCBingo/static/js/2.e4c6e3f3.chunk.js",
-    "static/js/2.e4c6e3f3.chunk.js.map": "/VCBingo/static/js/2.e4c6e3f3.chunk.js.map",
+    "static/js/2.8a27787b.chunk.js": "/VCBingo/static/js/2.8a27787b.chunk.js",
+    "static/js/2.8a27787b.chunk.js.map": "/VCBingo/static/js/2.8a27787b.chunk.js.map",
     "index.html": "/VCBingo/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/VCBingo/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.e4c6e3f3.chunk.js.LICENSE.txt": "/VCBingo/static/js/2.e4c6e3f3.chunk.js.LICENSE.txt"
+    "static/js/2.8a27787b.chunk.js.LICENSE.txt": "/VCBingo/static/js/2.8a27787b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.32965a95.js",
-    "static/js/2.e4c6e3f3.chunk.js",
+    "static/js/2.8a27787b.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.ed5fc2f7.chunk.js"
+    "static/js/main.dd834b28.chunk.js"
   ]
 }
